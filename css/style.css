@@ -1,3 +1,27 @@
-.cache{
-    display: none;
+:root {
+    --couleur-principale: #FF6B35;
+    --couleur-secondaire: #1B4332;
+    --couleur-fond: #F8F9FA;
+    --couleur-texte: #1A1A1A;
+
+    --police-titre:'Space Grotesk' , sans-serif;
+    --police-texte: 'Inter', sans-serif;
+    --espacement: 1rem;
+    --radius: 8px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--police-texte);
+    color: var(--couleur-texte);
+    background-color: var(--couleur-fond);
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-family: var(--police-titre);
 }
