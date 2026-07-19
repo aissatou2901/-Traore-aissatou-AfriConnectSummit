@@ -5,26 +5,240 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AfriConnect Summit 2026 - Programme</title>
     <link rel="stylesheet" href="css/style.css">
-    <!-- Google Fonts et icônes à ajouter ici plus tard -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 </head>
 <body data-theme="light">
     <header>
-        <nav>
-                <!-- logo + liens + toggle dark mode + hamburger -->
-        </nav>
-    </header>
-    <main>
-        <section id="hero-interne"></section>
-         <!-- h1, fil d'Ariane Accueil > Programme -->
-        <section id="onglets-programme"></section>
-        <!-- 3 boutons onglets Jour 1/2/3 + tableaux Heure/Session/Intervenant/Salle -->
-        <section id="thematiques"></section>
-        <!-- grille 2x2 : 4 thématiques (icône, titre, description) -->
+    <nav>
+        <a href="index.html" class="logo">AfriConnect Summit</a>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="programme.html">Programme</a></li>
+            <li><a href="intervenants.html">Intervenants</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <button id="theme-toggle" aria-label="Changer de thème">
+            <i class="bi bi-moon-stars"></i>
+        </button>
+        <button id="hamburger-btn" aria-label="Ouvrir le menu">
+            <i class="bi bi-list"></i>
+        </button>
+    </nav>
+</header>
+<main>
+    <section id="hero-interne">
+    <h1>Programme de la conférence</h1>
+    <nav aria-label="Fil d'Ariane">
+        <a href="index.html">Accueil</a> > <span>Programme</span>
+    </nav>
+</section>
+
+     
+        <section id="onglets-programme">
+            <!-- 3 boutons onglets Jour 1/2/3 + tableaux Heure/Session/Intervenant/Salle -->
+    <h2>Programme sur 3 jours</h2>
+
+    <div class="onglets-boutons">
+        <button class="onglet-btn active" data-jour="jour1">Jour 1</button>
+        <button class="onglet-btn" data-jour="jour2">Jour 2</button>
+        <button class="onglet-btn" data-jour="jour3">Jour 3</button>
+    </div>
+
+    <div class="onglet-contenu" id="jour1">
+        <table>
+            <thead>
+                <tr>
+                    <th>Heure</th>
+                    <th>Session</th>
+                    <th>Intervenant</th>
+                    <th>Salle</th>
+                </tr>
+            </thead>
+            <tbody>
+                    <tr>
+                        <td>09h00</td>
+                        <td>Cérémonie d'ouverture</td>
+                        <td>Awa toure</td>
+                        <td>Salle A</td>
+                </tr>
+                <tr>
+                         <td>10h30</td>
+                         <td>Intelligence artificielle en Afrique</td>
+                         <td>Fatou Ndiaye</td>
+                         <td>Salle B</td>
+                </tr>
+    <tr>
+        <td>12h00</td>
+        <td>Pause déjeuner</td>
+        <td>-</td>
+        <td>Espace networking</td>
+    </tr>
+    <tr>
+        <td>14h00</td>
+        <td>Cybersécurité et souveraineté numérique</td>
+        <td>Kwame Mensah</td>
+        <td>Salle A</td>
+    </tr>
+    <tr>
+        <td>16h00</td>
+        <td>Panel : financer sa startup tech</td>
+        <td>Amina Traoré</td>
+        <td>Salle C</td>
+    </tr>
+      <!-- minimum 5 lignes <tr> -->
+</tbody>
+        </table>
+    </div>
+
+    <div class="onglet-contenu cache" id="jour2">
+    <table>
+        <thead>
+            <tr>
+                <th>Heure</th>
+                <th>Session</th>
+                <th>Intervenant</th>
+                <th>Salle</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>09h00</td>
+                <td>Blockchain et paiements mobiles</td>
+                <td>Youssef El Amrani</td>
+                <td>Salle A</td>
+            </tr>
+            <tr>
+                <td>10h30</td>
+                <td>Croissance des startups agritech</td>
+                <td>Fatima Diarra</td>
+                <td>Salle B</td>
+            </tr>
+            <tr>
+                <td>12h00</td>
+                <td>Pause déjeuner</td>
+                <td>-</td>
+                <td>Espace networking</td>
+            </tr>
+            <tr>
+                <td>14h00</td>
+                <td>Design centré utilisateur en Afrique</td>
+                <td>Awa Touré</td>
+                <td>Salle C</td>
+            </tr>
+            <tr>
+                <td>16h00</td>
+                <td>Table ronde : investisseurs et fondateurs</td>
+                <td>Amina Traoré</td>
+                <td>Salle A</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+  <div class="onglet-contenu cache" id="jour3">
+    <table>
+        <thead>
+            <tr>
+                <th>Heure</th>
+                <th>Session</th>
+                <th>Intervenant</th>
+                <th>Salle</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>09h00</td>
+                <td>L'avenir du e-commerce en Afrique</td>
+                <td>Kwame Mensah</td>
+                <td>Salle A</td>
+            </tr>
+            <tr>
+                <td>10h30</td>
+                <td>Sécuriser ses données personnelles</td>
+                <td>Fatou Ndiaye</td>
+                <td>Salle B</td>
+            </tr>
+            <tr>
+                <td>12h00</td>
+                <td>Pause déjeuner</td>
+                <td>-</td>
+                <td>Espace networking</td>
+            </tr>
+            <tr>
+                <td>14h00</td>
+                <td>Pitch startups : 10 projets à suivre</td>
+                <td>Amina Traoré</td>
+                <td>Salle C</td>
+            </tr>
+            <tr>
+                <td>16h00</td>
+                <td>Cérémonie de clôture</td>
+                <td>Awa toure</td>
+                <td>Salle A</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</section>
+        
+    <section id="thematiques">
+    <h2>Nos thématiques</h2>
+
+    <article class="thematique-carte">
+        <i class="bi bi-cpu"></i>
+        <h3>Intelligence Artificielle & Tech</h3>
+        <p>Les dernières avancées en IA appliquées au contexte africain.</p>
+    </article>
+
+    <article class="thematique-carte">
+        <i class="bi bi-briefcase"></i>
+        <h3>Entrepreneuriat & Business</h3>
+        <p>Stratégies de croissance et retours d'expérience de fondateurs.</p>
+    </article>
+
+    <article class="thematique-carte">
+        <i class="bi bi-palette"></i>
+        <h3>Design & Expérience Utilisateur</h3>
+        <p>Créer des produits numériques centrés sur l'utilisateur africain.</p>
+    </article>
+
+    <article class="thematique-carte">
+        <i class="bi bi-bar-chart"></i>
+        <h3>Data & Analytics</h3>
+        <p>Exploiter la donnée pour prendre de meilleures décisions business.</p>
+    </article>
+    <!-- grille 2x2 : 4 thématiques (icône, titre, description) -->
+</section>
+        
     
     </main>
     <footer>
          <!-- 3 colonnes + réseaux sociaux + copyright -->
-    </footer>
+    
+    <div class="footer-col">
+        <h3>À propos</h3>
+        <p>AfriConnect Summit réunit chaque année les acteurs de la tech africaine autour de l'innovation et de l'entrepreneuriat.</p>
+    </div>
+
+    <div class="footer-col">
+        <h3>Liens rapides</h3>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="programme.html">Programme</a></li>
+        </ul>
+    </div>
+
+    <div class="footer-col">
+        <h3>Suivez-nous</h3>
+        <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+        <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+    </div>
+
+    <p>&copy; <span id="year"></span> AfriConnect Summit</p>
+
+    <button id="back-to-top" aria-label="Retour en haut">↑</button>
+</footer>
+
     <script src="js/main.js"></script>
     
 </body>
