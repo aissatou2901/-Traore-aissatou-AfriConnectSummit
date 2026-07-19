@@ -590,3 +590,7 @@ footer a {
     border-radius: var(--radius);
     margin-top: var(--espacement);
 }
+.logo img {
+    height: 200px;
+    width: auto;
+}
