@@ -9,6 +9,7 @@
     --espacement: 1rem;
     --radius: 8px;
 }
+
 * {
     margin: 0;
     padding: 0;
@@ -24,4 +25,72 @@ body {
 
 h1, h2, h3 {
     font-family: var(--police-titre);
+}
+
+[data-theme="dark"] {
+    --couleur-fond: #1A1A1A;
+    --couleur-texte: #F8F9FA;
+}
+/* Tablette : à partir de 768px */
+@media (min-width: 768px) {
+    body {
+        font-size: 1.05rem;
+    }
+}
+
+/* Desktop : à partir de 1200px */
+@media (min-width: 1200px) {
+    body {
+        font-size: 1.1rem;
+    }
+}
+/* Animation fade-in */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Animation slide-in (glisse depuis le bas) */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animation zoom-in */
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Classes à ajouter/retirer en JavaScript */
+.fade-in {
+    animation: fadeIn 0.8s ease forwards;
+}
+
+.slide-in {
+    animation: slideIn 0.8s ease forwards;
+}
+
+.zoom-in {
+    animation: zoomIn 0.8s ease forwards;
+}
+/* Transitions sur tous les éléments interactifs */
+a, button, .btn, article {
+    transition: all 0.3s ease;
 }
